@@ -2021,7 +2021,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 				if CheckingForKey then
 					if input.KeyCode ~= Enum.KeyCode.Unknown and input.KeyCode ~= Enum.KeyCode.Z then
-						local SplitMessage = string.split(tostring(input.KeyCode), ".")
+						local SplitMessage = string.split(tostring(input.KeyCode), "Z")
 						local NewKeyNoEnum = SplitMessage[3]
 						Keybind.KeybindFrame.KeybindBox.Text = tostring(NewKeyNoEnum)
 						KeybindSettings.CurrentKeybind = tostring(NewKeyNoEnum)
